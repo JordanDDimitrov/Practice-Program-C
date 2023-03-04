@@ -5,10 +5,10 @@
 #include "../include/perfect_number.h"
 int main() {
 
-//    task1();
-//    task2();
-//    task3();
-//    prime_number();
+    task1();
+    task2();
+    task3();
+    prime_number();
     perfect_number();
 }
 

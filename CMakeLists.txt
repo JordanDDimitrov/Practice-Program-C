@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5.1)
 
-project(untitled C)
+project(Practice C)
 
 
 set(INC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include)
@@ -16,6 +16,7 @@ add_executable(
         ${INC_DIR}/perfect_number.h
 
         ${SRC_DIR}/main.c
+
         ${SRC_DIR}/task1.c
         ${SRC_DIR}/task2.c
         ${SRC_DIR}/task3.c
@@ -27,3 +28,5 @@ target_include_directories(
         PRIVATE
         ${INC_DIR}
 )
+
+target_link_libraries(${PROJECT_NAME} m)

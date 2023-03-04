@@ -30,11 +30,11 @@ void task1(){
 }
 int digPow(int n, int p) {
 
-    int numDigits = floor(log10(n))+1;
+    int numDigits = (int)floor(log10(n))+1;
     int result = 0;
     int num = n;
     for (int i = p + numDigits - 1; i >= p; i--) {
-        result += pow(num%10, i);
+        result += (int)pow(num%10, i);
         num/=10;
     }
     return (result % n) ? -1 : result / n;
