@@ -1,4 +1,4 @@
-#include "perfect_number.h"
+#include "../include/perfect_number.h"
 
 static int task_perfect_number(int n);
 void perfect_number() {

@@ -2,7 +2,7 @@
 #include "task2.h"
 #include "task3.h"
 #include "prime_number.h"
-#include "perfect_number.h"
+#include "../include/perfect_number.h"
 int main() {
 
 //    task1();

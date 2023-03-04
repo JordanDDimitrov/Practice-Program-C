@@ -9,13 +9,19 @@ set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 #generate project binary
 add_executable(
     ${PROJECT_NAME}
-        ${INC_DIR}/task2.h
         ${INC_DIR}/task1.h
+        ${INC_DIR}/task2.h
+        ${INC_DIR}/task3.h
+        ${INC_DIR}/prime_number.h
+        ${INC_DIR}/perfect_number.h
+
         ${SRC_DIR}/main.c
         ${SRC_DIR}/task1.c
         ${SRC_DIR}/task2.c
-        src/task3.c include/task3.h src/prime_number.c include/prime_number.h fdsfsd.h src/perfect_number.c src/perfect_number.h)
-
+        ${SRC_DIR}/task3.c
+        ${SRC_DIR}/prime_number.c
+        ${SRC_DIR}/perfect_number.c
+)
 target_include_directories(
         ${PROJECT_NAME}
         PRIVATE
